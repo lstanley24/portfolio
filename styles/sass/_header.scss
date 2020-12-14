@@ -1,0 +1,58 @@
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+header {
+  background-image: url(../assets/portfolio-header-01.png);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: right;
+  padding-top: 35px;
+} 
+
+nav li a {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-left: 30px;
+  padding-bottom: 5px;
+}
+
+nav li a:hover,
+nav li a:focus {
+  border-bottom: solid 2px #00bec5;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh ;
+}
+
+.alien {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+
+}

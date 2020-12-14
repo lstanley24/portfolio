@@ -1,0 +1,50 @@
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.welcome.display-none{
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 80%;
+  bottom: 0;
+  z-index: 10;
+  transition: all 0.5s; 
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.welcome img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  animation: landing 4s linear;  
+}
+
+@keyframes landing {
+  0% {
+    top: 0;
+  }
+
+  20%,
+  40%,
+  50%,
+  60% {
+    margin-left: 100px;
+  }
+
+
+  100% {
+    top: 100%;
+  }
+}
