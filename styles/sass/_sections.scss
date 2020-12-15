@@ -2,8 +2,206 @@
   min-height: 100vh;
 }
 
-h3 {
-  font-family: 'Mulish', sans-serif;
-  font-weight: 600;
-  font-size: 3rem;
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
 }
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-element {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 120px;
+  left: 400px;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.laura-face {
+  box-shadow: 10px 10px grey;
+}
+
+.navigation-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.box-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 35px 25px 35px;
+}
+
+.navigation-boxes h3 {
+  font-size: 4rem;
+  text-transform: lowercase;
+  margin-bottom: 25px;
+}
+
+.navigation-boxes img {
+  width: 50px;
+
+}
+
+.navigation-boxes i {
+  text-align: right;
+
+}
+
+.navigation-boxes i {
+  font-size: 3rem;
+  text-align: right;
+}
+
+.front-end-development,
+.writing,
+.contact {
+  display: inline-block;
+  min-height: 35vh;
+  width: 33%;
+  color: white;
+}
+
+.front-end-development {
+  background-color: #442e7a;
+}
+
+.writing {
+  background-color: #00b5bc;
+}
+
+.contact {
+  background-color: #ee3364;
+}
+
+.writing p,
+.contact p {
+  margin-bottom: 40px;
+}
+
+.front-end-development:hover,
+.front-end-development:focus,
+.writing:hover,
+.writing:focus,
+.contact:hover,
+.contact:focus {
+  opacity: 0.8;
+}
+
+.front-end-development h3:hover,
+.front-end-development h3:focus,
+.writing h3:hover,
+.writing h3:focus,
+.contact h3:hover,
+.contact h3:focus,
+.front-end-development p:hover,
+.front-end-development p:focus,
+.writing p:hover,
+.writing p:focus,
+.contact p:hover,
+.contact p:focus {
+  color: black;
+}
+
+
+
+
+
+
+.arrow-icon {
+  display: block;
+  text-align: right;
+  padding: 0 15px 15px 0;
+}
+
+.arrow-icon:hover,
+.arrow-icon:focus {
+  color: black;
+}
+
+
+
+// web projects page
+
+.dolly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0 50px 0;
+
+}
+
+.dolly-text {
+  max-width: 50%;
+}
+
+.dolly-img {
+  max-width: 50%;
+}
+
+
+.dolly-img:hover,
+.dolly-img:focus {
+  border: solid 5px grey;
+  
+}
+
+.skills {
+  background-color: #00bec5;
+  padding: 85px 0 85px 0;
+  color: white;
+}
+
+.skills i {
+  font-size: 5rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: row;
+}
+
+
+// writing page 
+
+.writing-rows ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.writing-rows li {
+  position: relative;
+
+}
+
+.writing-item-container {
+  // margin-right: 20px;
+  // width: calc((100% - 60px) / 3);
+  // height: auto;
+  // padding-bottom: 80px;
+  width: 400px;
+
+}
+
+// .writing-item-container li:nth-child(2) {
+//   margin: 0 50px 0 15px;
+// }
+
+
+
+
+
+// contact page
+
+

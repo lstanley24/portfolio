@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Mulish:wght@600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ce85cdd91a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Laura Stanley</title>
 </head>
 <body>
-  <!-- <div class="welcome">
-    <div class="content-wrapper">
-      <img src="./assets/ufo.png" alt="an alien spacecraft floats down the page">
-    </div>
-  </div> -->
-
+ 
   <!-- for screen readers -->
-  
+
   <a href="#main-content"class="skip-link">Skip to main content.</a>
-  <header>
+  <header class="home-page">
     <div class="wrapper">  
+      <!-- For hamburger menu icon in mobile   -->
+      <label for="toggle"><i class="fa fa-bars"></i><span class="sr-only">Click here to access menu</span></label>
+      <input type="checkbox" id="toggle" name="toggle">
+      
       <nav class="primary-menu">
         <ul>
-          <li class="primary-menu"><a href="#">Home</a></li>
-          <li class="primary-menu"><a href="#">Web</a></li>
-          <li class="primary-menu"><a href="#">Writing</a></li>
-          <li class="primary-menu"><a href="#">Contact</a>
+          <li class="primary-menu"><a href="index.html">Home</a></li>
+          <li class="primary-menu"><a href="web.html">Web</a></li>
+          <li class="primary-menu"><a href="writing.html">Writing</a></li>
+          <li class="primary-menu"><a href="contact.html">Contact</a>
         </ul>
       </nav>
       <div class="header-text">
@@ -34,44 +34,92 @@
         <h2>Freelance Writer & Front-End Developer</h2>
         <figure class="alien animate__animated animate__fadeInDown animate__slower animate__infinite">
 
-          <a href="#main-content"><img src="./assets/ufo2.png" alt="an alien space craft floating on the page"></a>
+          <a href="#main-content"><img src="./assets/ufo2.png" alt="an alien space craft floating downwards" title="more content below"></a>
 
         </figure>
       </div>
     </div>
   </header>
-  <main id=#main-content>
+  <main id="main-content">
     <section class="about">
       <div class="wrapper">
-        <div class="about-text">
-          <h3>I'm a Toronto-based front-end developer and freelance writer. I have a lot of feelings. blah blah blah </h3>
+        <div class="about-wrapper">
+          <div class="about-text">
+            <h3>I'm a Toronto-based front-end developer and freelance writer. I have a lot of feelings. blah blah blah </h3>
+          </div>
+          <div class="about-photo">
+            <div class="about-element">
+              <img src="./assets/portfolio_element.png" alt="">
+            </div>
+            <div class="laura-face">
+              <figure> 
+                <img src= "https://placebear.com/500/500" alt="">
+              </figure>
+            </div>
+          </div>
         </div>
-        <div class="about-photo">
-          <figure>
-            <img src= "https://placebear.com/500/500" alt="">
-          </figure>
-          <figure>
-            <img src="./assets/portfolio_element.png" alt="">
-          </figure>
+
+        <div class="navigation-boxes">
+
+          <div class="front-end-development">
+            <div class="box-content-wrapper">
+              <img src="./assets/zigzag-moustache.png" alt="">
+              <h3><a href="web.html">Front-End Development</h3></a>
+              <p><a href="web.html">Here are some projects that I've done!</p>
+            </div>
+            <div class="arrow-icon">
+
+              <a href="web.html" aria-label="Click here to view front-end-development project samples"><i aria-hidden="true" class="far fa-arrow-alt-circle-right" title="Click here to view front-end-development project samples"></i></a>
+
+            </div>
+          </div>
+
+          <div class="writing">
+            <div class="box-content-wrapper">
+              <img src="./assets/zigzag-moustache.png">              
+              <h3><a href="writing.html">writing samples</a></h3>
+              <p><a href="writing.html">Here are some writing that I've done!</a></p>
+            </div>
+            <div class="arrow-icon">
+
+              <a href="writing.html" aria-label="Click here to view writing samples"><i aria-hidden="true" class="far fa-arrow-alt-circle-right" title="Click here to view writing samples"></i></a>
+
+            </div>
+          </div>
+
+          <div class="contact">
+              <div class="box-content-wrapper">
+                <img src="./assets/zigzag-moustache.png"> 
+                <h3><a href="contact.html">Contact</h3></a>
+                <p><a href="contact.html">Give me a job!</p></a>
+              </div>
+              <div class="arrow-icon">
+              <a href="contact.html" aria-label="Click here to find ways to contact me"><i aria-hidden="true" class="far fa-arrow-alt-circle-right" title="Click here to visit contact page"></i></a>
+              </div>
+          </div>
+
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
   </main>
   <footer>
-    © Laura Stanley | Alien made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> 
+    <div class="wrapper">
+
+      <div class="footer-content">
+        <h2>Contact</h2>
+        <div class="footer-icons">
+          <ul>
+            <li><a href="mailto:laurastanley24@gmail.com" aria-label="Connect with me through email"><i aria-hidden="true" class="fas fa-envelope"></i></a></li>
+            <li><a href="https://github.com/lstanley24" aria-label="Find out what I'm up to on Github"><i aria-hidden="true" class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.twitter.com/lstanley24" aria-label="Follow me on Twitter"><i aria-hidden="true" class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-text">
+          <p> © Laura Stanley | Alien made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a></p>
+        </div>
+
+      </div>
+    </div>
   </footer>
-  <script src="scripts.js"></script>
 </body>
 </html>

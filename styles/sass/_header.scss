@@ -11,34 +11,25 @@
   left: 0;
 }
 
-header {
+// Hamburger menu (mobile) styles 
+
+#toggle {
+  display: none;
+}
+
+i.fa-bars {
+  visibility: hidden;
+}
+
+
+// Home page (index.html) styles
+
+.home-page {
   background-image: url(../assets/portfolio-header-01.png);
   background-repeat: no-repeat;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-}
-
-header ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: right;
-  padding-top: 35px;
-} 
-
-nav li a {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  margin-left: 30px;
-  padding-bottom: 5px;
-}
-
-nav li a:hover,
-nav li a:focus {
-  border-bottom: solid 2px #00bec5;
 }
 
 .header-text {
@@ -54,5 +45,51 @@ nav li a:focus {
   bottom: 0;
   width: 100px;
   height: 100px;
+}
+
+// Web and writing sections styles
+
+.web,
+.writing-header {
+  background-color: #acacac;
+  min-height: 50vh;
+}
+
+.web .header-text,
+.writing-header .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 35vh ;
+}
+
+@media (max-width: 768px) { 
+  // HAMBURGER MENU
+  
+  nav {
+      position: absolute;
+      display: none;
+  }
+
+  i.fa-bars {
+      visibility: visible;
+      font-size: 5rem;
+      text-align: end;
+  }
+
+  input:checked + nav {
+      display: block;
+      position: relative;
+  }
+
+  #toggle {
+      position: absolute; 
+      left: -1000000px;
+  }
+
+
 
 }
+
+
