@@ -17,7 +17,13 @@
   display: none;
 }
 
-i.fa-bars {
+.hamburger-menu {
+  position: absolute;
+  right:0;
+  top: 0;
+  padding: 25px;
+  max-width: 85px;
+  max-height: 85px;
   visibility: hidden;
 }
 
@@ -47,7 +53,7 @@ i.fa-bars {
   height: 100px;
 }
 
-// Web and writing sections styles
+// Web, writing, and contact sections styles
 
 .web,
 .writing-header {
@@ -64,30 +70,69 @@ i.fa-bars {
   min-height: 35vh ;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 940px) { 
+
   // HAMBURGER MENU
-  
+
   nav {
-      position: absolute;
-      display: none;
+    position: absolute;
+    background-color: #00b5bc;
+    color: white;
+    display: none;
+    z-index: 1;
+
   }
 
-  i.fa-bars {
-      visibility: visible;
-      font-size: 5rem;
-      text-align: end;
+  .hamburger-menu {
+    visibility: visible;
+     
   }
 
   input:checked + nav {
-      display: block;
-      position: relative;
+    display: block;
+    position: relative;
   }
+
+  input:checked + nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  input:checked + nav li {
+    padding-top: 15px;
+  }
+
+   input:checked + nav a {
+    border: none;
+
+
+  }
+
+  input:checked + nav li:hover,
+  input:checked + nav li:focus {
+    color: black;
+    border-bottom: none;
+
+  }
+
+  .hamburger-menu {
+    z-index: 2;
+  }
+
 
   #toggle {
-      position: absolute; 
-      left: -1000000px;
+    position: absolute; 
+    right: -1000000px;
+
   }
 
+  // fun elements
+
+  .alien {
+    display: none;
+  }
 
 
 }

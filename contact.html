@@ -12,6 +12,13 @@
 <body>
   <header class="writing-header">
     <div class="wrapper">
+      <!-- For hamburger menu icon in mobile   -->
+      <label for="toggle"><img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzYwN2Q4YiI+PHBhdGggZD0ibTM1MiAwaC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zNTIgMTI4aC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zNTIgMjU2aC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+          class="hamburger-menu" />
+        <span class="sr-only">Click here to access menu</span></label>
+      <input type="checkbox" id="toggle" name="toggle">
+
       <nav class="primary-menu">
         <ul>
           <li class="primary-menu"><a href="index.html">Home</a></li>
@@ -26,37 +33,58 @@
     </div>
   </header>
   <main>
+
     <div class="wrapper">
+      
       <div class="contact-wrapper">
-
-    
-        <figure class="alien animate__animated animate__fadeInDown animate__slower animate__infinite">
-
+      
+        <div class="contact-text">
           
-        <img src="./assets/ufo2.png" alt="an alien space craft floating downwards" title="more content below">
-
-
-          
-        </figure>
-          
-        
-        <div class="greetings">
+          <figure class="contact-alien animate__animated animate__pulse animate__slower animate__infinite">
+            <img src="./assets/ufo2.png" alt="an alien space craft floating downwards" class="contact-alien">
+          </figure>
+      
           <h2>Say hello!</h2>
        
-          <p>I'm current available for freelance work</p>
-        </div>
-  
-        <ul>
-          <li><a href="mailto:laurastanley24@gmail.com" aria-label="Connect with me through email"><i aria-hidden="true"
-                class="fas fa-envelope"></i></a></li>
-          <li><a href="https://github.com/lstanley24" aria-label="Find out what I'm up to on Github"><i aria-hidden="true"
-                class="fab fa-github-square"></i></a></li>
-          <li><a href="https://www.twitter.com/lstanley24" aria-label="Follow me on Twitter"><i aria-hidden="true"
-                class="fab fa-twitter"></i></a></li>
-        </ul>
+          <p>I'm current available for freelance work.</p>
 
+          <ul>
+            <li><a href="mailto:laurastanley24@gmail.com" aria-label="Connect with me through email"><i aria-hidden="true"
+                  class="fas fa-envelope"></i></a></li>
+            <li><a href="https://github.com/lstanley24" aria-label="Find out what I'm up to on Github"><i aria-hidden="true"
+                  class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.twitter.com/lstanley24" aria-label="Follow me on Twitter"><i aria-hidden="true"
+                  class="fab fa-twitter"></i></a></li>
+          </ul>
+
+        </div>
+
+
+        <div class="contact-form">
+
+          <form action="" methods="post" class="my-form">
+            <fieldset>
+              <legend><span class="sr-only">Post a comment</span></legend>
+              <div class="name-email">
+                <label for="name" class="sr-only">Please enter your full name</label>
+                <input type="text" name="name" placeholder="Name" id="name">
+          
+                <label for="email" class="sr-only">Please enter your email address</label>
+                <input type="email" name="email" placeholder="Email address" id="email">
+              </div>
+              <label for="message" class="sr-only">Please write your message</label>
+              <textarea name="message" id="message" cols="25" rows="10" placeholder="Message"></textarea>
+            </fieldset>
+            <button class="form-submit">Send Message</button>
+          </form>
+
+        </div>
+        <figure class="contact-element">
+          <img src="./assets/contact-element-01.png">
+        </figure>
       
       </div>
+
     </div>
   </main>
   <footer>
@@ -66,12 +94,12 @@
         <h2>Contact</h2>
         <div class="footer-icons">
           <ul>
-            <li><a href="mailto:laurastanley24@gmail.com" aria-label="Connect with me through email"><i aria-hidden="true"
-                  class="fas fa-envelope"></i></a></li>
-            <li><a href="https://github.com/lstanley24" aria-label="Find out what I'm up to on Github"><i
-                  aria-hidden="true" class="fab fa-github-square"></i></a></li>
-            <li><a href="https://www.twitter.com/lstanley24" aria-label="Follow me on Twitter"><i aria-hidden="true"
-                  class="fab fa-twitter"></i></a></li>
+            <li><a href="mailto:laurastanley24@gmail.com" aria-label="Connect with me through email" title="send me an email"><i
+                  aria-hidden="true" class="fas fa-envelope"></i></a></li>
+            <li><a href="https://github.com/lstanley24" aria-label="Find out what I'm up to on Github"
+                title="Visit my Github page"><i aria-hidden="true" class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.twitter.com/lstanley24" aria-label="Follow me on Twitter" title="Follow me on Twitter"><i
+                  aria-hidden="true" class="fab fa-twitter"></i></a></li>
           </ul>
         </div>
         <div class="footer-text">

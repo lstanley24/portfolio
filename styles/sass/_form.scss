@@ -1,0 +1,65 @@
+fieldset {
+  border: none;
+  width: 100%
+
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.my-form {
+  width: 100%;
+
+
+}
+
+input[type=text], 
+input[type=email],
+textarea {
+  border: solid 2px #442e7a;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+input[type=text], 
+input[type=email] {
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+input[type=text] {
+  margin-right: 10px;
+ 
+}
+.name-email {
+  display: flex;
+  flex-direction: row;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 15px;
+}
+
+.form-submit {
+  width: 100%;
+  border: none;
+  padding: 10px 0 10px 0;
+  margin: 10px 0 25px 0;
+  background-color: #00b5bc;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+  background-color: #442e7a;
+  color: white;
+}

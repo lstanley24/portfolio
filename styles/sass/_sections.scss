@@ -1,13 +1,12 @@
 .about {
-  min-height: 100vh;
+  min-height: 85vh;
 }
 
 .about-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 100px 0;
 }
 
 .about-text {
@@ -15,23 +14,25 @@
 }
 
 .about-element {
-  position: relative;
+  position: absolute;
   width: 200px;
   height: 200px;
-  top: 120px;
-  left: 400px;
+  top: -55px;
+  left: 380px;
   z-index: -10;
-  overflow: hidden;
 }
 
 .laura-face {
   box-shadow: 10px 10px grey;
+  position: relative;
 }
 
-.navigation-boxes {
+// home page's colourful boxes styling
+
+.navigation-boxes ul {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -54,22 +55,16 @@
 }
 
 .navigation-boxes i {
-  text-align: right;
-
-}
-
-.navigation-boxes i {
   font-size: 3rem;
   text-align: right;
+
 }
 
 .front-end-development,
 .writing,
 .contact {
-  display: inline-block;
-  min-height: 35vh;
-  width: 33%;
   color: white;
+  width: calc(1280px / 3);
 }
 
 .front-end-development {
@@ -113,11 +108,6 @@
   color: black;
 }
 
-
-
-
-
-
 .arrow-icon {
   display: block;
   text-align: right;
@@ -130,37 +120,124 @@
 }
 
 
-
 // web projects page
 
-.dolly {
+.project-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  // flex-wrap: wrap;
   align-items: center;
-  margin: 50px 0 50px 0;
-
-}
-
-.dolly-text {
-  max-width: 50%;
-}
-
-.dolly-img {
-  max-width: 50%;
-}
-
-
-.dolly-img:hover,
-.dolly-img:focus {
-  border: solid 5px grey;
+  margin: 45px 0 45px 0;
   
 }
+
+.project-img {
+  width: 50%;
+  margin-right: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.project-img-mobile {
+  max-width: 25%;
+  margin-right: 50px;
+  z-index: 2;
+  position: absolute;
+  top: 55px;
+  left: 0;
+
+}
+
+.project-img-mobile-dolly {
+  max-width: 25%;
+  margin-right: 50px;
+  z-index: 2;
+  position: absolute;
+  top: 25px;
+  left: -6px;
+
+}
+
+.project-img-mobile-youreads {
+  max-width: 25%;
+  margin-right: 50px;
+  z-index: 2;
+  position: absolute;
+  top: 25px;
+  left: -6px;
+
+}
+
+
+.project-img:hover,
+.project-img:focus {
+  opacity: 0.8;
+}
+
+.project-text {
+  max-width: 50%;
+}
+
+.project-text h2 {
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.project-text p {
+  font-size: 2.3rem;
+  line-height: 1.6;
+
+}
+
+.project-text img {
+  max-width: 40px;
+}
+
+.buttons a {
+  font-size: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ee3364;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 25px 35px 0 0;
+}
+
+.buttons a:hover,
+.buttons a:focus {
+  background-color: #00bec5;
+  color: black;
+
+}
+
+.project-text ul {
+  display: flex;
+  margin: 25px 0 15px 0;
+}
+
+.project-text li {
+  font-size: 4rem;
+  margin-right: 10px;
+}
+
+.project-text li:hover,
+.project-text li:focus {
+  color: #ee3364;
+
+}
+
+// skills container with icons
 
 .skills {
   background-color: #00bec5;
   padding: 85px 0 85px 0;
   color: white;
+}
+
+.skills h3 {
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 35px;
 }
 
 .skills i {
@@ -169,39 +246,149 @@
 
 .skills ul {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.skills li {
+  margin: 20px 55px 0 0;
+  // nth child that shit???
+}
+
+.skills li:hover,
+.skills li:focus {
+  color: black;
+}
 
 // writing page 
+
+.writing-portfolio h2 {
+  font-style: italic;
+  padding-top: 45px;
+
+}
 
 .writing-rows ul {
   display: flex;
   flex-wrap: wrap;
+  margin: 45px 0 45px 0;
+  justify-content: center;
+ 
 }
 
 .writing-rows li {
+  margin-right: 25px;
+ 
+}
+
+.writing-item-container {
+  width: 400px;
+  margin-bottom: 45px;
+
+}
+
+.writing-item-container img {
+  margin-bottom: 5px;
+}
+
+.writing-item-container img:hover,
+.writing-item-container img:focus {
+  opacity: 0.8;
+
+}
+
+.writing-item-container h3 {
+  margin-bottom: 15px;
+
+}
+.writing-item-container h3:hover,
+.writing-item-container h3:focus {
+  color: #00bec5;
+
+} 
+
+.writing-item-container h4:hover,
+.writing-item-container h4:focus {
+  color: black; 
+}
+ 
+.writing-item-container p {
+  font-style: italic;
+  margin-bottom: 20px;
+
+}
+
+// contact page
+
+.contact-wrapper {
+  min-height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
 
 }
 
-.writing-item-container {
-  // margin-right: 20px;
-  // width: calc((100% - 60px) / 3);
-  // height: auto;
-  // padding-bottom: 80px;
-  width: 400px;
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+.contact-alien {
+ height: 100px;
+ width: 100px;
+ margin-bottom: 25px;
+}
+
+.contact-text h2 {
+  text-align: left;
+}
+
+.contact-text p {
+  font-style: italic;
+  margin: 25px 0 25px 0;
 
 }
 
-// .writing-item-container li:nth-child(2) {
-//   margin: 0 50px 0 15px;
-// }
+.contact-text ul {
+  display: flex;
+  
+}
 
+.contact-text li {
+  font-size: 3rem;
+  color: #ee3364;
+}
 
+.contact-text li:nth-child(2) {
+  padding: 0 30px 0 30px;
+}
 
+.contact-text li:hover,
+.contact-text li:focus {
+  color: #442e7a;
 
+}
 
-// contact page
+.contact-element {
+  position: absolute;
+  max-width: 250px;
+  max-height: 250px;
+  z-index: -10;
+  bottom: -85px;
+  left: 0;
+}
+
+@media (max-width: 940px) { 
+  .about-element {
+    display: none;
+
+  }
+
+}
+
 
 
