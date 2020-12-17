@@ -1,35 +1,36 @@
 * { 
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 .wrapper {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -39,7 +40,6 @@ h1 {
   color: #442e7a;
   text-align: center;
   padding-bottom: 25px;
- 
 }
 
 h2 {
@@ -48,13 +48,13 @@ h2 {
   font-size: 4.5rem;
   color: black;
   text-align: center;
-
 }
 
 h3 {
   font-family: 'Mulish', sans-serif;
   font-weight: 600;
   font-size: 3rem;
+  line-height: 1.2;
 }
 
 h4 {

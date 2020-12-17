@@ -5,14 +5,11 @@ fieldset {
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
   width: 50%;
 }
 
 .my-form {
   width: 100%;
-
 
 }
 
@@ -62,4 +59,22 @@ textarea {
 .form-submit:focus {
   background-color: #442e7a;
   color: white;
+}
+
+@media (max-width: 940px) {
+  .contact-form {
+    width: 75%;
+    padding-top: 25px;
+  }
+
+  .name-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type=text], 
+  input[type=email] {
+    width: 100%;
+  }
+
 }

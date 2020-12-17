@@ -242,6 +242,7 @@ textarea {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -290,6 +291,7 @@ h3 {
   font-family: 'Mulish', sans-serif;
   font-weight: 600;
   font-size: 3rem;
+  line-height: 1.2;
 }
 
 h4 {
@@ -552,16 +554,28 @@ nav li a:focus {
 }
 
 .about-text {
-  max-width: 50%;
+  max-width: 55%;
+}
+
+.bio-part-two {
+  padding-top: 20px;
+}
+
+.publications {
+  font-style: italic;
 }
 
 .about-element {
   position: absolute;
   width: 200px;
   height: 200px;
-  top: -55px;
-  left: 380px;
+  top: -68px;
+  left: 330px;
   z-index: -10;
+}
+
+.about-photo {
+  max-width: 35%;
 }
 
 .laura-face {
@@ -674,6 +688,8 @@ nav li a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -681,7 +697,7 @@ nav li a:focus {
 }
 
 .project-img {
-  width: 50%;
+  max-width: 590px;
   margin-right: 50px;
   z-index: 1;
   position: relative;
@@ -720,7 +736,7 @@ nav li a:focus {
 }
 
 .project-text {
-  max-width: 50%;
+  max-width: 640px;
 }
 
 .project-text h2 {
@@ -733,8 +749,25 @@ nav li a:focus {
   line-height: 1.6;
 }
 
+.credits {
+  padding-top: 10px;
+}
+
+.project-text a {
+  color: #ee3364;
+}
+
+.project-text a:hover,
+.project-text a:focus {
+  color: black;
+}
+
 .project-text img {
   max-width: 40px;
+}
+
+.buttons {
+  padding-top: 20px;
 }
 
 .buttons a {
@@ -745,7 +778,7 @@ nav li a:focus {
   color: white;
   padding: 15px;
   border-radius: 5px;
-  margin: 25px 35px 0 0;
+  margin-right: 35px;
 }
 
 .buttons a:hover,
@@ -824,17 +857,23 @@ nav li a:focus {
           justify-content: center;
 }
 
-.writing-rows li {
-  margin-right: 25px;
-}
-
 .writing-item-container {
   width: 400px;
   margin-bottom: 45px;
 }
 
+.writing-item-container:nth-child(2),
+.writing-item-container:nth-child(5),
+.writing-item-container:nth-child(8) {
+  margin: 0 15px 0 15px;
+}
+
 .writing-item-container img {
   margin-bottom: 5px;
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .writing-item-container img:hover,
@@ -863,10 +902,12 @@ nav li a:focus {
 
 .contact-wrapper {
   min-height: 85vh;
-  width: 100%;
+  max-width: 1280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -884,7 +925,6 @@ nav li a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
 }
 
 .contact-alien {
@@ -932,8 +972,52 @@ nav li a:focus {
 }
 
 @media (max-width: 940px) {
+  .about-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+  }
+  .about-text h3 {
+    font-size: 2.5rem;
+  }
+  .about-text {
+    max-width: 80%;
+  }
   .about-element {
     display: none;
+  }
+  .about-photo {
+    max-width: 55%;
+    padding-top: 50px;
+  }
+  .project-wrapper {
+    margin: 45px 35px;
+  }
+  .project-img {
+    margin-right: 0;
+  }
+  .project-text h2 {
+    padding-top: 25px;
+  }
+  .buttons {
+    padding: 20px 0 35px 0;
+  }
+  .contact-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 15px;
   }
 }
 
@@ -943,13 +1027,6 @@ fieldset {
 }
 
 .contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 50%;
 }
 
@@ -1008,6 +1085,26 @@ textarea {
 .form-submit:focus {
   background-color: #442e7a;
   color: white;
+}
+
+@media (max-width: 940px) {
+  .contact-form {
+    width: 75%;
+    padding-top: 25px;
+  }
+  .name-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input[type=text],
+  input[type=email] {
+    width: 100%;
+  }
 }
 
 footer {
