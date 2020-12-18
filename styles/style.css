@@ -646,7 +646,7 @@ nav li a:focus {
 
 .writing p,
 .contact p {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .front-end-development:hover,
@@ -693,6 +693,9 @@ nav li a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 45px 0 45px 0;
 }
 
@@ -736,7 +739,7 @@ nav li a:focus {
 }
 
 .project-text {
-  max-width: 640px;
+  max-width: 600px;
 }
 
 .project-text h2 {

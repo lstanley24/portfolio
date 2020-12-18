@@ -91,7 +91,7 @@
 
 .writing p,
 .contact p {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .front-end-development:hover,
@@ -135,6 +135,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
   margin: 45px 0 45px 0;
 }
 
@@ -178,7 +179,7 @@
 }
 
 .project-text {
-  max-width: 640px;
+  max-width: 600px;
 }
 
 .project-text h2 {
@@ -419,10 +420,6 @@
     padding-top: 50px;
 
   }
-
-  
-
-
 
   //web project styles
 
