@@ -6,12 +6,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Mulish:wght@600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
   <link type="image/png" href="./assets/favicon.png" rel="icon">
   <script src="https://kit.fontawesome.com/ce85cdd91a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./styles/style.css">
   <title>Laura Stanley</title>
 </head>
 <body>
   <header class="writing-header">
     <div class="wrapper">
+      <figure class="header-element">
+        <img src="./assets/header-graphic.png">
+      </figure>
       <!-- For hamburger menu icon in mobile   -->
       <label for="toggle"><img
           src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzYwN2Q4YiI+PHBhdGggZD0ibTM1MiAwaC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zNTIgMTI4aC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zNTIgMjU2aC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
@@ -27,18 +31,25 @@
         </ul>
       </nav>
       <div class="header-text">
-        <h1>Writing</h1>
+        <h1 class="secondary">Writing</h1>
       </div>
     </div>
   </header>
   <main class="writing-portfolio">
     <div class="wrapper">
       <h2>Selected Works</h2>
-      <section>
+      <div class="filter-buttons" id="filter-buttons">
+        <ul>
+          <li><button class="sort-button active" id="features-sort"><p>Features</p></button></li>
+          <li><button class="sort-button" id="reviews-sort"><p>Reviews</p></button></li>
+        </ul>
+      </div>
+
+      <section id="features">
         <div class="writing-rows">
           <ul>
             <div class="writing-item-container">
-              <li>
+              <li class="feature">
                 <a href="https://exclaim.ca/music/article/daniel_romano_2020_interview">
                   <figure class="photo-container">
                     <img src="./assets/daniel-romano-exclaim-01.png" alt="Daniel Romano on the cover of Exclaim Magazine. Daniel wears a blue trucker hat, black framed glasses, a plaid shirt, and a beige sweatervest.">
@@ -50,7 +61,7 @@
               </li>
             </div>
             <div class="writing-item-container">
-              <li>
+              <li class="feature">
                 <a href="https://www.musicworks.ca/c-diab-cascadian-guitar-music">
                   <figure class="photo-container">
                     <img src="./assets/c-diab.jpg" alt="C Diab, shrouded in red light, bowing an acoustic guitar during a live performance">
@@ -62,7 +73,7 @@
               </li>
             </div>
             <div class="writing-item-container">
-              <li>
+              <li class="feature">
                 <a href="https://www.nodepression.com/kathleen-edwards-on-quitting-unquitting-and-the-power-of-both/">
                   <figure>
                     <img src="./assets/kathleen-edwards-no-depression.jpg"
@@ -75,7 +86,7 @@
               </li>
             </div>
             <div class="writing-item-container">
-              <li>
+              <li class="feature">
                 <a href="https://exclaim.ca/film/article/schitts_creek_noah_reid_gemini_interview">
                   <figure>
                     <img src="./assets/noah-reid-exclaim.jpg" alt="Against a beige backdrop, Noah, wearing a black top, looks pensively into the distance.">
@@ -87,7 +98,7 @@
               </li>
             </div>
             <div class="writing-item-container">
-              <li>
+              <li class="feature">
                 <a href="https://nowtoronto.com/music/women-from-space-festival-2020">
                   <figure>
                     <img src="./assets/women-from-space.jpg" alt="Against a colourful backdrop Bea Labikova poses with her saxophone. She wears a white jacket and a colourful dress.">
@@ -99,7 +110,7 @@
               </li>
             </div>
             <div class="writing-item-container">
-              <li>
+              <li class="feature">
                 <a href="https://exclaim.ca/music/article/orville_peck_talks_about_his_breakthrough_year_why_the_mask_isnt_a_mystery_and_living_his_sincere_truth">
                   <figure>
                       <img src="./assets/orville-peck-exclaim.jpg" alt="Against a colourful backdrop, Orville Peck points into the distance. Orville wears a white cowboy hate, a fringed leather mask, a leather vest, and wooly chaps">
@@ -110,44 +121,244 @@
                 </a>
               </li>
             </div>
-            <div class="writing-item-container">
-              <li>
-                <a href="https://nowtoronto.com/music/features/team-building-toronto-music-songwriters">
-                  <figure>
-                    <img src="./assets/team-building.jpg" alt="Luke Kuplowsky plays acoustic guitar and sings into a microphone in front of a crowd in a cafe.">
-                  </figure>
-                  <p>Photo by Win Kuplowsky</p>
-                  <h3>Team Building is a safe space for Toronto’s songwriters</h3>
-                  <h4>May 2019 | NOW Magazine</h4>
+          </ul>
+        </div>
+      </section>
+      <section class="load-more-features animate__animated animate__fadeIn">
+        <ul class="flex-rows">
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="https://exclaim.ca/music/article/tegan_and_sara_discuss_memoir_high_school_their_formative_years_and_how_new_album_hey_im_just_like_you_proves_they_always_already_had_it">
+                <figure>
+                  <img src="./assets/tegan-and-sara.jpeg"
+                    alt="Tegan and Sara wear 90s-inspired clothes and pose next to a white electric guitar">
+                </figure>
+                <p>Photo by Trevor Brady</p>
+                <h3>Tegan and Sara Looked to the Past for Their New Album and Memoir — and Found Their Present Selves</h3>
+                <h4>September 2019 | Exclaim! Magazine</h4>
               </a>
-              </li>
-            </div>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="https://exclaim.ca/music/article/bedouine_lets_go_opens_up_on_new_album_bird_songs_of_a_killjoy">
+                <figure>
+                  <img src="./assets/bedouine.jpeg"
+                    alt="Bedouine wears a blue floral dress, posing with an acoustic guitar, looks to her right">
+                </figure>
+                <p>Photo by Moises Galvan</p>
+                <h3>Bedouine Lets Go, Opens Up on New Album 'Bird Songs of a Killjoy'</h3>
+                <h4>June 2019 | Exclaim! Magazine</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="https://exclaim.ca/music/article/sharon_van_etten_was_too_busy_to_make_an_album_then_she_wrote_40_songs_for_remind_me_tomorrow">
+                <figure>
+                  <img src="./assets/sharon-van-etten.jpeg"
+                    alt="Sharon Van Etten, with a brown background, wears a tie-dyed tanktop and stares directly into the camera">
+                </figure>
+                <p>Photo by Ryan Pfluger</p>
+                <h3>Sharon Van Etten Was Too Busy to Make an Album, Then She Wrote 40 Songs for 'Remind Me Tomorrow'</h3>
+                <h4>June 2019 | Exclaim! Magazine</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="https://nowtoronto.com/music/features/team-building-toronto-music-songwriters">
+                <figure>
+                  <img src="./assets/team-building.jpg" alt="Luke Kuplowsky plays acoustic guitar and sings into a microphone in front of a crowd in a cafe.">
+                </figure>
+                <p>Photo by Win Kuplowsky</p>
+                <h3>Team Building is a safe space for Toronto’s songwriters</h3>
+                <h4>May 2019 | NOW Magazine</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="https://exclaim.ca/music/article/aldous_hardings_designer_dances_on_different_feet">
+                <figure>
+                  <img src="./assets/aldous-harding.jpeg"
+                    alt="Aldous Harding wears a white top and skirt and bends to touch her toe. A cloudy sky is in the background">
+                </figure>
+                <p>Photo by Clare Shilland</p>
+                <h3>Aldous Harding's 'Designer' Dances on "Different Feet"</h3>
+                <h4>April 2019 | Exclaim! Magazine</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="https://sheshreds.com/yola-guitar/">
+                <figure>
+                  <img src="./assets/yola.jpg" alt="YOLA, wearing a floral printed dress, plays a black acoustic guitar against a purple background">
+                </figure>
+                <p>Photo by Alysse Gafkjen</p>
+                <h3>For Yola, The Guitar is Her Freedom</h3>
+                <h4>April 2019 | She Shreds</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="https://exclaim.ca/music/article/witch_prophet_seeks_deep_connection_on_the_golden_octave">
+                <figure>
+                  <img src="./assets/witch-prophet.jpeg"
+                    alt="Witch Prophet Seeks Deep Connection on 'The Golden Octave'">
+                </figure>
+                <p>Photo by Brianna Roye</p>
+                <h3>Witch Prophet Seeks Deep Connection on 'The Golden Octave'</h3>
+                <h4>June 2018 | Exclaim! Magazine</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="http://www.undertheradarmag.com/interviews/marlon_williams_on_make_way_for_love/">
+                <figure>
+                  <img src="./assets/maron-williams.jpg"
+                    alt="Marlon Williams, shirtless, looks directly into the camera">
+                </figure>
+                <p>Photo by Steve Gullick</p>
+                <h3>Marlon Williams on “Make Way For Love”</h3>
+                <h4>May 2018 | Under the Radar</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="feature">
+              <a href="https://daily.bandcamp.com/features/land-of-talk-interview">
+                <figure>
+                  <img src="./assets/land-of-talk.jpeg" alt="Land of Talk's Elizabeth Powell wears a faded jean jacket and looks off into the distance. A body of water is in the background.">
+                </figure>
+                <p>Photo by Matt Williams</p>
+                <h3>Land of Talk’s Elizabeth Powell on the Healing Power of Music</h3>
+                <h4>May 2017 | Bandcamp</h4>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </section>
+      <div class="load-more-button-wrapper">
+        <button class="load-more-features-button" id="load-more-features-button">Load More</button>
+      </div>
+      <section class="reviews" id="reviews">
+        <div class="reviews-rows">
+          <ul>
             <div class="writing-item-container">
-              <li>
-                <a href="https://sheshreds.com/yola-guitar/">
+              <li class="review">
+                <a href="https://www.nodepression.com/album-reviews/anjimile-debuts-with-giver-taker-an-album-celebrating-the-self/">
                   <figure>
-                    <img src="./assets/yola.jpg" alt="YOLA, wearing a floral printed dress, plays a black acoustic guitar against a purple background">
+                    <img src="./assets/anjimile-cover.jpg"
+                      alt="">
                   </figure>
-                  <p>Photo by Alysse Gafkjen</p>
-                  <h3>For Yola, The Guitar is Her Freedom</h3>
-                  <h4>April 2019 | She Shreds</h4>
+                  <h3>Anjimile Debuts with ‘Giver Taker,’ An Album Celebrating the Self</h3>
+                  <h4>December 2020 | No Depression</h4>
                 </a>
               </li>
             </div>
             <div class="writing-item-container">
-              <li>
-                <a href="https://daily.bandcamp.com/features/land-of-talk-interview">
+              <li class="review">
+                <a href="https://newfeeling.ca/author/lstanley24/">
                   <figure>
-                    <img src="./assets/land-of-talk.jpeg" alt="Land of Talk's Elizabeth Powell wears a faded jean jacket and looks off into the distance. A body of water is in the background.">
+                    <img src="./assets/square_morespace.jpg" alt="">
                   </figure>
-                  <p>Photo by Matt Williams</p>
-                  <h3>Land of Talk’s Elizabeth Powell on the Healing Power of Music</h3>
-                  <h4>May 2017 | Bandcamp</h4>
+                  <h3>New Feeling Issues 1-3</h3>
+                  <h4>2020 | New Feeling </h4>
+                </a>
+              </li>
+            </div>
+            <div class="writing-item-container">
+              <li class="review">
+                <a href="https://www.nodepression.com/album-reviews/kris-delmhorst-opens-her-door-on-long-day-in-the-milky-way/">
+                  <figure>
+                    <img src="./assets/Kris-Delmhorst.jpg"
+                      alt="">
+                  </figure>
+                  <h3>Kris Delmhorst Opens Her Door on ‘Long Day in the Milky Way’</h3>
+                  <h4>August 2020 | No Depression</h4>
+                </a>
+              </li>
+            </div>
+            <div class="writing-item-container">
+              <li class="review">
+                <a href="https://exclaim.ca/music/article/phoebe_bridgers_punisher_album_review">
+                  <figure>
+                    <img src="./assets/phoebe-bridgers.jpg"
+                      alt="">
+                  </figure>
+                  <h3>Phoebe Bridgers' Miraculous 'Punisher' Is Larger Than Life</h3>
+                  <h4>June 2020 | Exclaim! Magazine</h4>
+                </a>
+              </li>
+            </div>
+            <div class="writing-item-container">
+              <li class="review">
+                <a href="https://dominionated.ca/reviews/albums/marlaena-moore-pay-attention-be-amazed/">
+                  <figure>
+                    <img src="./assets/marlaena-moore-pay-attention-be-amazed-800x800.jpg" alt="">
+                  </figure>
+                  <h3>Marlaena Moore - Pay Attention, Be Amazed!</h3>
+                  <h4>May 2020 | Dominionated</h4>
+                </a>
+              </li>
+            </div>
+            <div class="writing-item-container">
+              <li class="review">
+                <a href="https://nowtoronto.com/music/album-reviews/witch-prophet-dna-activation">
+                  <figure>
+                    <img src="./assets/witch-prophet-cover.jpg" alt="">
+                  </figure>
+                  <h3>Witch Prophet’s DNA Activation shows the power of family in dark times</h3>
+                  <h4>March 2020 | NOW Magazine</h4>
                 </a>
               </li>
             </div>
           </ul>
         </div>
+      </section>
+      <div class="load-more-button-wrapper">
+        <button class="load-more-reviews-button" id="load-more-reviews-button">Load More</button>
+      </div>
+      <section class="load-more-reviews animate__animated animate__fadeIn">
+        <ul class="flex-rows"> 
+          <div class="writing-item-container">
+            <li class="review">
+              <a href="https://exclaim.ca/music/article/the_highwomen-the_highwomen">
+                <figure>
+                  <img src="./assets/jennah-barry-cover.jpg" alt="">
+                </figure>
+                <h3>Jennah Barry - Holiday</h3>
+                <h4>March 2020 | Exclaim! Magazine</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="review">
+              <a href="https://exclaim.ca/music/article/jennah_barry-holiday">
+                <figure>
+                  <img src="./assets/TheHighwomenCover.png" alt="">
+                </figure>
+                <h3>The Highwomen - The Highwomen</h3>
+                <h4>September 2019 | Exclaim! Magazine</h4>
+              </a>
+            </li>
+          </div>
+          <div class="writing-item-container">
+            <li class="review">
+              <a href="https://nowtoronto.com/music/album-reviews/obuxum-re-birth/">
+                <figure>
+                  <img src="./assets/obuxum-cover.jpg" alt="">
+                </figure>
+                <h3>OBUXUM’s debut album Re-Birth shows her story is just beginning</h3>
+                <h4>August 2019 | NOW Magazine</h4>
+              </a>
+            </li>
+          </div>
+        </ul>
       </section>
     </div>
   </main>
@@ -168,5 +379,8 @@
       </div>
     </div>
   </footer>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -56,13 +56,23 @@
 // Web, writing, and contact sections styles
 
 .web,
-.writing-header {
+.writing-header,
+.contact-header {
   background-color: #acacac;
   min-height: 50vh;
+  position: relative;
+}
+
+.header-element {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -15px;
 }
 
 .web .header-text,
-.writing-header .header-text {
+.writing-header .header-text, 
+.contact-header .header-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +80,7 @@
   min-height: 35vh ;
 }
 
-@media (max-width: 940px) { 
+@media (max-width: 1200px) { 
 
   // HAMBURGER MENU
 
@@ -104,9 +114,8 @@
     padding-top: 15px;
   }
 
-   input:checked + nav a {
+  input:checked + nav a {
     border: none;
-
 
   }
 
@@ -121,10 +130,18 @@
     z-index: 2;
   }
 
-
   #toggle {
     position: absolute; 
     right: -1000000px;
+
+  }
+
+  //header 
+
+  .web,
+  .writing-header,
+  .home-page {
+    min-height: 0;
 
   }
 
@@ -134,6 +151,10 @@
     display: none;
   }
 
+  .header-element {
+    display: none;
+
+  }
 
 }
 

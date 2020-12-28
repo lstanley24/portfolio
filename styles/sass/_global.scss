@@ -42,6 +42,20 @@ h1 {
   padding-bottom: 25px;
 }
 
+// h1s on all pages EXCEPT homepage
+
+.secondary {
+  font-family: 'Montserrat', sans-serif;;
+  font-weight: 900;
+  font-size: 8rem;
+  color: #442e7a;
+  text-align: center;
+  padding: 0;
+
+}
+
+
+
 h2 {
   font-family: 'Mulish', sans-serif;
   font-weight: 600;
