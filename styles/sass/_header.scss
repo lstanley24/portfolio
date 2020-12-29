@@ -55,7 +55,7 @@
 
 // Web, writing, and contact sections styles
 
-.web,
+.web-header,
 .writing-header,
 .contact-header {
   background-color: #acacac;
@@ -70,7 +70,7 @@
   top: -15px;
 }
 
-.web .header-text,
+.web-header .header-text,
 .writing-header .header-text, 
 .contact-header .header-text {
   display: flex;
@@ -95,8 +95,19 @@
 
   .hamburger-menu {
     visibility: visible;
-     
+    font-size: 4.5rem;
+    color: #442e7a;
   }
+
+  .hamburger-menu:hover,
+  .hamburger-menu:focus {
+    cursor: pointer;
+    color: black;
+
+
+  }
+
+
 
   input:checked + nav {
     display: block;
@@ -133,14 +144,15 @@
   #toggle {
     position: absolute; 
     right: -1000000px;
-
   }
+
 
   //header 
 
-  .web,
+  .web-header,
   .writing-header,
-  .home-page {
+  .home-page,
+  .contact-header {
     min-height: 0;
 
   }

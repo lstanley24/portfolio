@@ -8,23 +8,23 @@
   <link type="image/png" href="./assets/favicon.png" rel="icon">
   <script src="https://kit.fontawesome.com/ce85cdd91a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-  <link rel="stylesheet" href="./styles/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
 
   <title>Laura Stanley</title>
 </head>
 <body>
-  <header class="web">
+  <header class="web-header">
     <div class="wrapper">
       <figure class="header-element">
         <img src="./assets/header-graphic.png">
       </figure>
 
       <!-- For hamburger menu icon in mobile   -->
-      <label for="toggle"><img
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzYwN2Q4YiI+PHBhdGggZD0ibTM1MiAwaC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zNTIgMTI4aC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zNTIgMjU2aC0zMjBjLTE3LjY2NDA2MiAwLTMyIDE0LjMzNTkzOC0zMiAzMnYyMS4zMzIwMzFjMCAxNy42NjQwNjMgMTQuMzM1OTM4IDMyIDMyIDMyaDMyMGMxNy42NjQwNjIgMCAzMi0xNC4zMzU5MzcgMzItMzJ2LTIxLjMzMjAzMWMwLTE3LjY2NDA2Mi0xNC4zMzU5MzgtMzItMzItMzJ6bTAgMCIgZmlsbD0iIzQ0MmU3YSIgZGF0YS1vcmlnaW5hbD0iIzYwN2Q4YiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
-          class="hamburger-menu" />
-        <span class="sr-only">Click here to access menu</span></label>
+      <label for="toggle">
+        <span class="hamburger-menu" tabindex="0"><i class="fas fa-bars"></i></span>
+        <span class="sr-only">Click here to access menu</span>
+      </label>
       <input type="checkbox" id="toggle" name="toggle">
 
       <!-- main menu -->
@@ -44,33 +44,32 @@
   <main>
     <section>
       <div class="wrapper">
-
-        <div class="project-wrapper">
-          <div class="project-img">
-         
-            <figure>
-              <img src="./assets/dolly-2.png" alt="screen grab of Dolly Parton quiz project. Black text on a light pink background reads: Howdy, y'all! Complete the quiz below to find out which era of Dolly Parton you are!" title="Which Dolly Are You?">
-            </figure>
-            <figure class="project-img-mobile-dolly">
-              <img src="./assets/dolly-mobile.png"
-                alt="screen grab of Dolly Parton quiz project. Black text on a light pink background reads: Howdy, y'all! Complete the quiz below to find out which era of Dolly Parton you are!"
-                title="Which Dolly Are You?">
-            </figure>
-      
-          </div>
-          <div class="project-text">
-            <h2>Which Dolly Are You?</h2>
-            <p>A highly-scientific quiz that will determine which era of Dolly Parton you are.</p>
-            <ul>
-              <li><p>Created using:</p>
-              </li>
-              <li><i class="fab fa-html5" aria-label="HTML5" title="HTML5" aria-hidden="true"></i></li>
-              <li><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3" aria-hidden="true"></i></li>
-              <li><i class="fab fa-js" aria-label="JavaScript" title="JavaScript" aria-hidden="true"></i></li>
-              <li><i class="devicon-jquery-plain" aria-label="jquery" title="jquery" aria-hidden="true"></i></li>
-            </ul>
-            <div class="buttons">
-              <a href="https://lstanley24.github.io/laura-stanley-project-three/">View Live</a><a href="https://github.com/lstanley24/laura-stanley-project-three">Github</a>
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in" data-aos-delay="300" data-aos-offset="0">
+          <div class="project-wrapper">
+            <div class="project-img">
+              <figure>
+                <img src="./assets/dolly-2.png" alt="screen grab of Dolly Parton quiz project. Black text on a light pink background reads: Howdy, y'all! Complete the quiz below to find out which era of Dolly Parton you are!" title="Which Dolly Are You?">
+              </figure>
+              <figure class="project-img-mobile-dolly">
+                <img src="./assets/dolly-mobile.png"
+                  alt="screen grab of Dolly Parton quiz project. Black text on a light pink background reads: Howdy, y'all! Complete the quiz below to find out which era of Dolly Parton you are!"
+                  title="Which Dolly Are You?">
+              </figure>
+            </div>
+            <div class="project-text">
+              <h2>Which Dolly Are You?</h2>
+              <p>A highly-scientific quiz that will determine which era of Dolly Parton you are.</p>
+              <ul>
+                <li><p>Created using:</p>
+                </li>
+                <li><i class="fab fa-html5" aria-label="HTML5" title="HTML5" aria-hidden="true"></i></li>
+                <li><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3" aria-hidden="true"></i></li>
+                <li><i class="fab fa-js" aria-label="JavaScript" title="JavaScript" aria-hidden="true"></i></li>
+                <li><i class="devicon-jquery-plain" aria-label="jquery" title="jquery" aria-hidden="true"></i></li>
+              </ul>
+              <div class="buttons">
+                <a href="https://lstanley24.github.io/laura-stanley-project-three/">View Live</a><a href="https://github.com/lstanley24/laura-stanley-project-three">Github</a>
+              </div>
             </div>
           </div>
         </div>
@@ -78,29 +77,31 @@
     </section>
     <section class="binge-fest">
       <div class="wrapper">
-        <div class="project-wrapper">
-          <div class="project-img">
-            <figure>
-              <img src="./assets/binge-fest2.png" alt="screen grab of Binge Fest app. With a red background, the following words appear: Binge Fest. Feeling indecisive? Let us help you find a tv show to binge and a restaurant to order from">
-            </figure>
-                <figure class="project-img-mobile">
-                  <img src="./assets/binge-fest-mobile.png"
-                    alt="screen grab of Binge Fest app. With a red background, the following words appear: Binge Fest. Feeling indecisive? Let us help you find a tv show to binge and a restaurant to order from">
-                </figure>
-          </div>
-          <div class="project-text">
-            <h2>Binge Fest</h2>
-            <p>Using three APIs and Firebase, this app helps users determine what tv show to watch and what restaurant to order from<p>
-            <p class="credits"> Created with: <a href="http://melissacappe.com/">Melissa Cappe</a>, <a href="http://gregforster.ca/">Greg Forster</a>, & <a href="https://www.rezasoleimani.ca/">Reza Soleimani</a> </p>
-            <ul>
-              <li><p>Created using:</p></li>
-              <li><i class="fab fa-html5" aria-label="HTML5" title="HTML5" aria-hidden="true"></i></li>
-              <li><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3" aria-hidden="true"></i></li>
-              <li><i class="fab fa-js" aria-label="JavaScript" title="JavaScript" aria-hidden="true"></i></li>
-              <li><i class="fab fa-react" aria-label="React" title="React" aria-hidden="true"></i></li>
-            </ul>
-            <div class="buttons">
-              <a href="https://binge-fest.netlify.app/">View Live</a><a href="https://github.com/binge-fest/binge-fest">Github</a>
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+          <div class="project-wrapper">
+            <div class="project-img">
+              <figure>
+                <img src="./assets/binge-fest2.png" alt="screen grab of Binge Fest app. With a red background, the following words appear: Binge Fest. Feeling indecisive? Let us help you find a tv show to binge and a restaurant to order from">
+              </figure>
+                  <figure class="project-img-mobile">
+                    <img src="./assets/binge-fest-mobile.png"
+                      alt="screen grab of Binge Fest app. With a red background, the following words appear: Binge Fest. Feeling indecisive? Let us help you find a tv show to binge and a restaurant to order from.">
+                  </figure>
+            </div>
+            <div class="project-text">
+              <h2>Binge Fest</h2>
+              <p>Using three APIs and Firebase, this app helps users determine what tv show to watch and what restaurant to order from<p>
+              <p class="credits"> Created with: <a href="http://melissacappe.com/">Melissa Cappe</a>, <a href="http://gregforster.ca/">Greg Forster</a>, & <a href="https://www.rezasoleimani.ca/">Reza Soleimani</a> </p>
+              <ul>
+                <li><p>Created using:</p></li>
+                <li><i class="fab fa-html5" aria-label="HTML5" title="HTML5" aria-hidden="true"></i></li>
+                <li><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3" aria-hidden="true"></i></li>
+                <li><i class="fab fa-js" aria-label="JavaScript" title="JavaScript" aria-hidden="true"></i></li>
+                <li><i class="fab fa-react" aria-label="React" title="React" aria-hidden="true"></i></li>
+              </ul>
+              <div class="buttons">
+                <a href="https://binge-fest.netlify.app/">View Live</a><a href="https://github.com/binge-fest/binge-fest">Github</a>
+              </div>
             </div>
           </div>
         </div>
@@ -108,27 +109,29 @@
     </section>
     <section class="youreads">
       <div class="wrapper">
-        <div class="project-wrapper">
-          <div class="project-img">
-            <figure>
-              <img src="./assets/youreads-2.png" alt="screen grab of youreads app. With a colourful pastel background, the text reads: youreads. Enter the title of a book you want to read" title="youreads">
-            </figure>
-            <figure class="project-img-mobile-youreads">
-              <img src="./assets/youreads-mobile.png" alt="screen grab of youreads app. With a colourful pastel background, the text reads: youreads. Enter the title of a book you want to read" title="youreads">
-            </figure>
-          </div>
-          <div class="project-text">
-            <h2>youreads</h2>
-            <p>An app to keep track of the books you want to read. Definitely, in no way, affliated with Goodreads so don't sue me.</p>
-            <ul>
-              <li><p>Created using:</p></li>
-              <li><i class="fab fa-html5" aria-label="HTML5" title="HTML5" aria-hidden="true"></i></li>
-              <li><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3" aria-hidden="true"></i></li>
-              <li><i class="fab fa-js" aria-label="JavaScript" title="JavaScript" aria-hidden="true"></i></li>
-              <li><i class="fab fa-react" aria-label="React" title="React" aria-hidden="true"></i></li>
-            </ul>
-            <div class="buttons">
-              <a href="https://lstanley24.github.io/laura-stanley-project-five/">View Live</a><a href="https://github.com/lstanley24/laura-stanley-project-five">Github</a>
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+          <div class="project-wrapper">
+            <div class="project-img">
+              <figure>
+                <img src="./assets/youreads-2.png" alt="screen grab of youreads app. With a colourful pastel background, the text reads: youreads. Enter the title of a book you want to read" title="youreads">
+              </figure>
+              <figure class="project-img-mobile-youreads">
+                <img src="./assets/youreads-mobile.png" alt="screen grab of youreads app. With a colourful pastel background, the text reads: youreads. Enter the title of a book you want to read" title="youreads">
+              </figure>
+            </div>
+            <div class="project-text">
+              <h2>youreads</h2>
+              <p>An app to keep track of the books you want to read. Definitely, in no way, affliated with Goodreads so don't sue me.</p>
+              <ul>
+                <li><p>Created using:</p></li>
+                <li><i class="fab fa-html5" aria-label="HTML5" title="HTML5" aria-hidden="true"></i></li>
+                <li><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3" aria-hidden="true"></i></li>
+                <li><i class="fab fa-js" aria-label="JavaScript" title="JavaScript" aria-hidden="true"></i></li>
+                <li><i class="fab fa-react" aria-label="React" title="React" aria-hidden="true"></i></li>
+              </ul>
+              <div class="buttons">
+                <a href="https://lstanley24.github.io/laura-stanley-project-five/">View Live</a><a href="https://github.com/lstanley24/laura-stanley-project-five">Github</a>
+              </div>
             </div>
           </div>
         </div>
@@ -136,45 +139,41 @@
     </section>
     <section class="lotr">
       <div class="wrapper">
-        <div class="project-wrapper">
-          <div class="project-img">
-            <figure>
-              <img src="./assets/lotr.png"
-                alt="screen grab of youreads app. With a colourful pastel background, the text reads: youreads. Enter the title of a book you want to read"
-                title="youreads">
-            </figure>
-            <figure class="project-img-mobile-lotr">
-              <img src="./assets/lotr-mobile.png"
-                alt="screen grab of youreads app. With a colourful pastel background, the text reads: youreads. Enter the title of a book you want to read"
-                title="Lord of the Rings Quote Generator">
-            </figure>
-          </div>
-          <div class="project-text">
-            <h2>Lord of the Rings Quote Generator</h2>
-            <p>Made with the <a href="https://the-one-api.dev/">The One API</a>, this app generates quotes by your favourite Fellowship members from the Lord of the Rings films.</p> 
-            <ul>
-              <li>
-                <p>Created using:</p>
-              </li>
-              <li><i class="fab fa-html5" aria-label="HTML5" title="HTML5" aria-hidden="true"></i></li>
-              <li><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3" aria-hidden="true"></i></li>
-              <li><i class="fab fa-js" aria-label="JavaScript" title="JavaScript" aria-hidden="true"></i></li>
-              <li><i class="devicon-jquery-plain" aria-label="jquery" title="jquery" aria-hidden="true"></i></li>
-            </ul>
-            <div class="buttons">
-              <a href="https://lstanley24.github.io/lord-of-the-rings-quote-generator/">View Live</a><a
-                href="https://github.com/lstanley24/lord-of-the-rings-quote-generator">Github</a>
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+          <div class="project-wrapper">
+            <div class="project-img">
+              <figure>
+                <img src="./assets/lotr.png"
+                  alt="screen grab of youreads app. With a colourful pastel background, the text reads: youreads. Enter the title of a book you want to read"
+                  title="youreads">
+              </figure>
+              <figure class="project-img-mobile-lotr">
+                <img src="./assets/lotr-mobile.png"
+                  alt="screen grab of youreads app. With a colourful pastel background, the text reads: youreads. Enter the title of a book you want to read"
+                  title="Lord of the Rings Quote Generator">
+              </figure>
+            </div>
+            <div class="project-text">
+              <h2>Lord of the Rings Quote Generator</h2>
+              <p>Made with the <a href="https://the-one-api.dev/">The One API</a>, this app generates quotes by your favourite Fellowship members from the Lord of the Rings films.</p> 
+              <ul>
+                <li>
+                  <p>Created using:</p>
+                </li>
+                <li><i class="fab fa-html5" aria-label="HTML5" title="HTML5" aria-hidden="true"></i></li>
+                <li><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3" aria-hidden="true"></i></li>
+                <li><i class="fab fa-js" aria-label="JavaScript" title="JavaScript" aria-hidden="true"></i></li>
+                <li><i class="devicon-jquery-plain" aria-label="jquery" title="jquery" aria-hidden="true"></i></li>
+              </ul>
+              <div class="buttons">
+                <a href="https://lstanley24.github.io/lord-of-the-rings-quote-generator/">View Live</a><a
+                  href="https://github.com/lstanley24/lord-of-the-rings-quote-generator">Github</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    
-    
-    
     </section>
-
-
-
     <section class="skills">
       <h3>Skills</h3>
       <ul>
@@ -207,5 +206,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -73,16 +73,17 @@
 .front-end-development,
 .writing,
 .contact {
-  color: white;
+  color: black;
   width: calc(1280px / 3);
 }
 
 .front-end-development {
-  background-color: #442e7a;
+  background-color: #00b5bc;
 }
 
 .writing {
-  background-color: #00b5bc;
+  background-color: #acacac;
+  
 }
 
 .contact {
@@ -100,23 +101,25 @@
 .writing:focus,
 .contact:hover,
 .contact:focus {
-  opacity: 0.8;
+  opacity: 0.8;  
+  
 }
 
-.front-end-development h3:hover,
-.front-end-development h3:focus,
-.writing h3:hover,
-.writing h3:focus,
-.contact h3:hover,
-.contact h3:focus,
-.front-end-development p:hover,
-.front-end-development p:focus,
-.writing p:hover,
-.writing p:focus,
-.contact p:hover,
-.contact p:focus {
-  color: black;
-}
+// .front-end-development h3:hover,
+// .front-end-development h3:focus,
+// .writing h3:hover,
+// .writing h3:focus,
+// .contact h3:hover,
+// .contact h3:focus,
+// .front-end-development p:hover,
+// .front-end-development p:focus,
+// .writing p:hover,
+// .writing p:focus,
+// .contact p:hover,
+// .contact p:focus {
+//   color: black;
+
+// }
 
 .arrow-icon {
   display: block;
@@ -124,10 +127,11 @@
   padding: 0 15px 15px 0;
 }
 
-.arrow-icon:hover,
-.arrow-icon:focus {
-  color: black;
-}
+// .arrow-icon:hover,
+// .arrow-icon:focus {
+//   color: black;
+ 
+// }
 
 // web projects page
 
@@ -206,7 +210,7 @@
 }
 
 .project-text a {
-  color: #ee3364;
+  color: #442e7a;
 }
 
 .project-text a:hover,
@@ -238,7 +242,7 @@
 .skills {
   background-color: #00bec5;
   padding: 85px 0 85px 0;
-  color: white;
+  color: black;
 }
 
 .skills h3 {
@@ -263,7 +267,7 @@
 
 .skills li:hover,
 .skills li:focus {
-  color: black;
+  color: #3A3A3A;
 }
 
 // writing page 
@@ -281,11 +285,18 @@
   justify-content: center;
 }
 
-.writing-item-container,
-.review {
+.reviews-rows ul {
+  margin: 45px 0 25px 0;
+
+
+}
+
+.writing-item-container {
   width: 400px;
   margin-bottom: 45px;
 }
+
+
 
 .writing-item-container:nth-child(2),
 .review:nth-child(2),
@@ -363,7 +374,7 @@
   text-align: center;
   text-transform: uppercase;
   background-color: #ee3364;
-  color: white;
+  color: black;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -394,7 +405,6 @@
   align-items: right;
   padding-top: 35px;
 } 
-
 
 .filter-buttons button  {
   background: white;
@@ -537,6 +547,13 @@
 }
 
 @media (max-width: 480px) {
+
+  // web page 
+
+  .skills li {
+    margin: 20px 18px 0 0;
+  }
+
   //writing page 
 
   .writing-item-container, 
