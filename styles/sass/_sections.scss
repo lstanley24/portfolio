@@ -25,8 +25,8 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  top: -68px;
-  left: 330px;
+  top: -55px;
+  right: 300px;
   z-index: -10;
 }
 
@@ -105,33 +105,11 @@
   
 }
 
-// .front-end-development h3:hover,
-// .front-end-development h3:focus,
-// .writing h3:hover,
-// .writing h3:focus,
-// .contact h3:hover,
-// .contact h3:focus,
-// .front-end-development p:hover,
-// .front-end-development p:focus,
-// .writing p:hover,
-// .writing p:focus,
-// .contact p:hover,
-// .contact p:focus {
-//   color: black;
-
-// }
-
 .arrow-icon {
   display: block;
   text-align: right;
   padding: 0 15px 15px 0;
 }
-
-// .arrow-icon:hover,
-// .arrow-icon:focus {
-//   color: black;
- 
-// }
 
 // web projects page
 
@@ -422,7 +400,6 @@
 
 .filter-buttons p:hover,
 .filter-buttons p:focus,
-// .sort-button:nth-child(1),
 .filter-buttons .active {
   border-bottom: solid 2px #00bec5;
 }
@@ -487,6 +464,28 @@
   bottom: -85px;
   left: 0;
 }
+
+@media (max-width: 1200px) { 
+
+  .about-element {
+    display: none;
+  }
+
+  .writing-item-container,
+  .writing-item-container:nth-child(2), 
+  .writing-item-container:nth-child(5),
+  .writing-item-container:nth-child(8)  {
+    margin: 10px;
+
+  }
+
+  .reviews {
+    margin-bottom: 25px;
+
+  }
+}
+
+
 
 @media (max-width: 940px) { 
 

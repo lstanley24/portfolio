@@ -604,8 +604,8 @@ nav li a:focus {
   position: absolute;
   width: 200px;
   height: 200px;
-  top: -68px;
-  left: 330px;
+  top: -55px;
+  right: 300px;
   z-index: -10;
 }
 
@@ -1082,6 +1082,21 @@ nav li a:focus {
   z-index: -10;
   bottom: -85px;
   left: 0;
+}
+
+@media (max-width: 1200px) {
+  .about-element {
+    display: none;
+  }
+  .writing-item-container,
+  .writing-item-container:nth-child(2),
+  .writing-item-container:nth-child(5),
+  .writing-item-container:nth-child(8) {
+    margin: 10px;
+  }
+  .reviews {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 940px) {
