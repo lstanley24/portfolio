@@ -1003,14 +1003,16 @@ nav li a:focus {
 .filter-buttons p {
   text-transform: uppercase;
   font-style: italic;
-  border-bottom: solid 2px white;
   padding-bottom: 5px;
 }
 
-.filter-buttons p:hover,
-.filter-buttons p:focus,
 .filter-buttons .active {
   border-bottom: solid 2px #00bec5;
+}
+
+.filter-buttons p:hover,
+.filter-buttons p:focus {
+  font-weight: bold;
 }
 
 .contact-wrapper {
