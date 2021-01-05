@@ -806,8 +806,8 @@ nav li a:focus {
   margin-right: 10px;
 }
 
-.project-text li:hover,
-.project-text li:focus {
+.project-text i:hover,
+.project-text i:focus {
   color: #ee3364;
 }
 

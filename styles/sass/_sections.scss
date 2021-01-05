@@ -210,8 +210,8 @@
   margin-right: 10px;
 }
 
-.project-text li:hover,
-.project-text li:focus {
+.project-text i:hover,
+.project-text i:focus {
   color: #ee3364;
 }
 
@@ -265,16 +265,12 @@
 
 .reviews-rows ul {
   margin: 45px 0 25px 0;
-
-
 }
 
 .writing-item-container {
   width: 400px;
   margin-bottom: 45px;
 }
-
-
 
 .writing-item-container:nth-child(2),
 .review:nth-child(2),
