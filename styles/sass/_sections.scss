@@ -390,7 +390,7 @@
   margin: 0 10px;
 }
 
-.filter-buttons p {
+.filter-buttons button {
   text-transform: uppercase;
   font-style: italic;
   padding-bottom: 5px;
@@ -401,8 +401,8 @@
   border-bottom: solid 2px #00bec5;
 }
 
-.filter-buttons p:hover,
-.filter-buttons p:focus {
+.filter-buttons button:hover,
+.filter-buttons button:focus {
   font-weight: bold;
 }
 

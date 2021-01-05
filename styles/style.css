@@ -310,7 +310,8 @@ h4 {
   color: #ee3364;
 }
 
-p {
+p,
+.sort-button {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 1.8rem;
@@ -1000,7 +1001,7 @@ nav li a:focus {
   margin: 0 10px;
 }
 
-.filter-buttons p {
+.filter-buttons button {
   text-transform: uppercase;
   font-style: italic;
   padding-bottom: 5px;
@@ -1010,8 +1011,8 @@ nav li a:focus {
   border-bottom: solid 2px #00bec5;
 }
 
-.filter-buttons p:hover,
-.filter-buttons p:focus {
+.filter-buttons button:hover,
+.filter-buttons button:focus {
   font-weight: bold;
 }
 
