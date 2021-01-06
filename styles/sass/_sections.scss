@@ -544,13 +544,19 @@
 
 @media (max-width: 480px) {
 
+
   // web page 
 
   .skills li {
     margin: 20px 18px 0 0;
   }
 
-  //writing page 
+  .buttons a {
+    padding: 10px;
+    margin-right: 10px;
+
+
+  }
 
   .writing-item-container, 
   .writing-item-container:nth-child(2), 

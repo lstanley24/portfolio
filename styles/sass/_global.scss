@@ -83,8 +83,6 @@ p,
   font-size: 1.8rem;
 }
 
-
-
 nav ul {
   display: flex;
   flex-direction: row;
@@ -105,4 +103,23 @@ nav li a {
 nav li a:hover,
 nav li a:focus {
   border-bottom: solid 2px #00bec5;
+}
+
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .secondary {
+    font-size: 6rem;
+
+
+  }
+
+  h2 {
+    font-size: 5rem;
+
+  }
 }
